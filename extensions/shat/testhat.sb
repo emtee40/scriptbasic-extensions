@@ -1,0 +1,26 @@
+IMPORT shat.bas
+
+SHAT::Init(1)
+
+SHAT::GetPressure(pressure, ptemp)
+SHAT::GetTempHumid(htemp, humid)
+SHAT::GetAccel(Ax, Ay, Az)
+SHAT::GetMagneto(Mx, My, Mz)
+SHAT::GetGyro(Gx, Gy, Gz)
+
+PRINT "Pressure: ", pressure, "\n"
+PRINT "P-Temp: ", ptemp,"\n"
+PRINT "Humidity: ", humid,"\n"
+PRINT "H-Temp: ", htemp,"\n"
+PRINT "Accel-x: ", Ax, "\n"
+PRINT "Accel-y: ", Ay, "\n"
+PRINT "Accel-z: ", Az, "\n"
+PRINT "Mag-x: ", Mx, "\n"
+PRINT "Mag-y: ", My, "\n"
+PRINT "Mag-z: ", Mz, "\n"
+PRINT "Gyro-x: ", Gx, "\n"
+PRINT "Gyro-y: ", Gy, "\n"
+PRINT "Gyro-z: ", Gz, "\n"
+
+SHAT::Shutdown
+
